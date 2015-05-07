@@ -1,5 +1,9 @@
 <div class="jumbotron">
-<h1><i class='fa fa-diamond'></i> Enrol Me</h1>
+<h1><i class='fa fa-dashcube'></i> Enroller</h1>
 <p>Using this site, you can register and save your details once, to enrol multiple times across different schools and clubs</p>
+   <% if current_user %>
+<%= link_to "About Us", about_path, class: "btn btn-primary btn-lg" %>
+   <% else %>
 <%= link_to "Register", new_user_registration_path, class: "btn btn-primary btn-lg" %>
+<% end %>
 </div>
