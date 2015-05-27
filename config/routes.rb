@@ -16,6 +16,7 @@ end
   get 'about' => "pages#about"
   get 'contact' => "pages#contact"
   get 'product' => "pages#products"
+  get 'test' => "pages#test"
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
